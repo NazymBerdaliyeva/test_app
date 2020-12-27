@@ -2,19 +2,16 @@ import 'package:flutter/material.dart';
 
 class ImageForm extends StatelessWidget {
   final String image;
+  final double width;
+  final double height;
 
-  ImageForm(this.image);
+  ImageForm({this.image,this.width, this.height});
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(
-        left: 23,
-        right: 23,
-      ),
-      width: 329,
-      height: 202,
+      width: width,
+      height: height,
       decoration: BoxDecoration(
-        color: Colors.amber,
         borderRadius: BorderRadius.all(
           new Radius.circular(25.0),
         ),
