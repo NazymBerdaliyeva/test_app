@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:test_app/components/row_data.dart';
-import 'package:test_app/components/values/colors.dart';
+import 'package:test_app/resources/values/colors.dart';
 
 import 'rounded_container.dart';
+import 'row_data.dart';
 
 class ServiceShortInfo extends StatefulWidget {
   @override
@@ -23,7 +23,6 @@ class _ServiceShortInfoState extends State<ServiceShortInfo> {
   Widget build(BuildContext context) {
     return RoundedContainer(
       height: 69,
-      width: 300,
       margin: EdgeInsets.only(top: 10, left: 34, right: 34),
       color: AppColors.LightGrey,
        child: Column(
@@ -31,7 +30,7 @@ class _ServiceShortInfoState extends State<ServiceShortInfo> {
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
           Container(
-            margin: EdgeInsets.only(top: 13, left: 24),
+            margin: EdgeInsets.only( left: 24),
             height: 20.75,
             //width: 189,
             child: DropdownButtonHideUnderline(

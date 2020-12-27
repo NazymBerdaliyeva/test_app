@@ -1,7 +1,8 @@
 import 'dart:math';
 import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
-import 'package:test_app/components/image_form.dart';
+
+import 'image_form.dart';
 
 class ScrollableImage extends StatefulWidget {
   final double height;

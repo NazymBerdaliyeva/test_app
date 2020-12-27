@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:test_app/components/row_data.dart';
-import 'package:test_app/components/values/colors.dart';
-import 'package:test_app/components/values/constant_text.dart';
+import 'package:test_app/resources/values/colors.dart';
+import 'package:test_app/resources/values/constant_text.dart';
 
-import '../scrollable_image.dart';
+import 'row_data.dart';
+import 'scrollable_image.dart';
+
 
 class ServiceInfoForm extends StatelessWidget {
   @override

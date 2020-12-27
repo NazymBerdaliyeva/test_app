@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:test_app/resources/values/colors.dart';
 
-import 'values/colors.dart';
+
 
 class SubtitleText extends StatelessWidget {
   final String text;

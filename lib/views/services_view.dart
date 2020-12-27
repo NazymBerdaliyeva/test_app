@@ -1,22 +1,22 @@
 import 'package:flutter/material.dart';
-
-import 'components/rating.dart';
-import 'components/rounded_container.dart';
-import 'components/service_info_form.dart';
-import 'components/service_short_info.dart';
-import 'components/status_form.dart';
-import 'components/title.dart';
-import 'components/values/colors.dart';
-import 'time_table_form.dart';
+import 'package:test_app/resources/components/rating.dart';
+import 'package:test_app/resources/components/rounded_container.dart';
+import 'package:test_app/resources/components/service_info_form.dart';
+import 'package:test_app/resources/components/service_short_info.dart';
+import 'package:test_app/resources/components/status_form.dart';
+import 'package:test_app/resources/components/title.dart';
+import 'package:test_app/resources/values/colors.dart';
+import '../resources/components/time_table_form.dart';
 
 class ServicesView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 327,
       height: 809,
       margin: EdgeInsets.only(
         top: 20,
+        left: 23,
+        right: 24
       ),
       decoration: BoxDecoration(
         color: Colors.white,
@@ -42,7 +42,10 @@ class ServicesView extends StatelessWidget {
             child: Text(
               'Winchester',
               style: TextStyle(
-                  fontSize: 28, fontWeight: FontWeight.w700, height: 0.3385, color: AppColors.DarkBrown),
+                  fontSize: 28,
+                  fontWeight: FontWeight.w700,
+                  height: 0.3385,
+                  color: AppColors.DarkBrown),
             ),
           ),
           Container(
@@ -65,12 +68,15 @@ class ServicesView extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              Rating(rate: '3.9', fontSize: 18, size: 18,),
+              Rating(rate: '3.9', fontSize: 18, size: 18),
               StatusForm(),
             ],
           ),
           TimeTableForm(),
-          TitleName(name: 'Услуги', margin: EdgeInsets.only(top: 39, left: 31),),
+          TitleName(
+            name: 'Услуги',
+            margin: EdgeInsets.only(top: 39, left: 31),
+          ),
           ServiceInfoForm(),
           ServiceShortInfo(),
           ServiceShortInfo(),

@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:test_app/resources/components/team_member_form.dart';
+import 'package:test_app/resources/components/title.dart';
 
-import 'components/team_member_form.dart';
-import 'components/title.dart';
-import 'model/team_member.dart';
+import '../model/team_member.dart';
 
 class TeamView extends StatelessWidget {
   final List<TeamMember> members = [
-    TeamMember(name: "Tom Hanks", image: "assets/images/img1.jpeg"),
-    TeamMember(name: "Tom Hanks", image: "assets/images/img2.jpeg"),
-    TeamMember(name: "Tom Hanks", image: "assets/images/img3.jpeg"),
-    TeamMember(name: "Tom Hanks", image: "assets/images/img1.jpeg"),
-    TeamMember(name: "Tom Hanks", image: "assets/images/img2.jpeg"),
-    TeamMember(name: "Tom Hanks", image: "assets/images/img3.jpeg"),
-    TeamMember(name: "Tom Hanks", image: "assets/images/img1.jpeg"),
+    TeamMember(name: "Саня Рыжий", image: "assets/images/img1.jpeg"),
+    TeamMember(name: "Саня Рыжий", image: "assets/images/img2.jpeg"),
+    TeamMember(name: "Саня Рыжий", image: "assets/images/img3.jpeg"),
+    TeamMember(name: "Саня Рыжий", image: "assets/images/img1.jpeg"),
+    TeamMember(name: "Саня Рыжий", image: "assets/images/img2.jpeg"),
+    TeamMember(name: "Саня Рыжий", image: "assets/images/img3.jpeg"),
+    TeamMember(name: "Саня Рыжий", image: "assets/images/img1.jpeg"),
   ];
   @override
   Widget build(BuildContext context) {

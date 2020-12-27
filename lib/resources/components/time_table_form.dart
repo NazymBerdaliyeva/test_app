@@ -1,7 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:test_app/components/values/colors.dart';
+import 'package:test_app/resources/values/colors.dart';
 
 class TimeTableForm extends StatefulWidget {
   @override

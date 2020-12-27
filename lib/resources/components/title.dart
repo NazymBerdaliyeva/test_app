@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'values/colors.dart';
+import 'package:test_app/resources/values/colors.dart';
 
 class TitleName extends StatelessWidget {
   final String name;

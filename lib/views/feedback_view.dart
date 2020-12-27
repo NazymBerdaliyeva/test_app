@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:test_app/components/primary_button.dart';
-
-import 'components/feedback_form.dart';
-import 'components/rounded_container.dart';
-import 'components/subtitle.dart';
-import 'components/title.dart';
-import 'components/values/colors.dart';
-import 'model/review.dart';
+import 'package:test_app/resources/components/feedback_form.dart';
+import 'package:test_app/resources/components/primary_button.dart';
+import 'package:test_app/resources/components/rounded_container.dart';
+import 'package:test_app/resources/components/subtitle.dart';
+import 'package:test_app/resources/components/title.dart';
+import 'package:test_app/resources/values/colors.dart';
+import '../model/review.dart';
 
 class FeedbackView extends StatelessWidget {
   final List<Review> _reviews = [
@@ -29,12 +28,6 @@ class FeedbackView extends StatelessWidget {
         image: "assets/images/img2.jpeg",
         feedbackText:
             "Был во второй раз. Это уже о чем то говорит! Алексей блестяще справился с задачей. Спасибо! "),
-    Review(
-        fullName: "Ruslan Wes",
-        rating: "3.2",
-        date: "12 05 2019",
-        image: "assets/images/img1.jpeg",
-        feedbackText: "Don't support Apple Pay!")
   ];
 
   @override
@@ -42,7 +35,6 @@ class FeedbackView extends StatelessWidget {
     return Container(
       height: 750,
       width: MediaQuery.of(context).size.width,
-      color: Colors.yellow,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -55,24 +47,19 @@ class FeedbackView extends StatelessWidget {
             fontWeight: FontWeight.w500,
             margin: EdgeInsets.only(top: 5, left: 33),
           ),
-          Container(
-            width: MediaQuery.of(context).size.width,
-            margin: EdgeInsets.only(top: 13),
-            height: 464,
-            child: ListView.builder(
-              padding: EdgeInsets.only(top: 0),
-              itemCount: _reviews.length,
-              itemBuilder: (_, int index) {
-                final review = _reviews[index];
-                return FeedbackForm(
-                  fullName: review.fullName,
-                  rating: review.rating,
-                  date: review.date,
-                  image: review.image,
-                  text: review.feedbackText,
-                );
-              },
-            ),
+          FeedbackForm(
+            fullName: _reviews[0].fullName,
+            rating: _reviews[0].rating,
+            date: _reviews[0].date,
+            image: _reviews[0].image,
+            text: _reviews[0].feedbackText,
+          ),
+          FeedbackForm(
+            fullName: _reviews[1].fullName,
+            rating: _reviews[1].rating,
+            date: _reviews[1].date,
+            image: _reviews[1].image,
+            text: _reviews[1].feedbackText,
           ),
           RoundedContainer(
             color: Colors.white,

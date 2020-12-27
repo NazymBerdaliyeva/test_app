@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:test_app/components/values/colors.dart';
-import 'package:test_app/feedback_view.dart';
-import 'package:test_app/scrollable_image.dart';
+import 'package:test_app/views/feedback_view.dart';
+import 'package:test_app/resources/components/scrollable_image.dart';
 
-import 'services_view.dart';
-import 'team_view.dart';
+import 'resources/values/colors.dart';
+import 'views/services_view.dart';
+import 'views/team_view.dart';
 
 void main() {
   runApp(MyApp());
@@ -32,15 +32,18 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: AppColors.DarkerGrey,
       appBar: AppBar(
         elevation: 0,
-        backgroundColor: Colors.transparent,
-        title: Text(
-          widget.title,
-          style: TextStyle(
-              fontWeight: FontWeight.w700,
-              color: AppColors.DarkBrown,
-              fontSize: 24),
+        backgroundColor: Colors.white,
+        title: Center(
+          child: Text(
+            widget.title,
+            style: TextStyle(
+                fontWeight: FontWeight.w700,
+                color: AppColors.DarkBrown,
+                fontSize: 24),
+          ),
         ),
         leading: Icon(
           Icons.arrow_back_ios_rounded,
@@ -60,9 +63,10 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           children: [
             Container(
-              height: 1349, // 1486,
+              height: 1370,
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.all(new Radius.circular(52)),
+                borderRadius: BorderRadius.only(bottomLeft: new Radius.circular(52), bottomRight: new Radius.circular(52)),
+                color: Colors.white,
               ),
               child: Column(
                 children: [

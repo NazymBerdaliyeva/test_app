@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:test_app/components/rating.dart';
-import 'package:test_app/components/subtitle.dart';
-import 'package:test_app/components/title.dart';
+import 'package:test_app/resources/components/rating.dart';
+import 'package:test_app/resources/components/subtitle.dart';
+import 'package:test_app/resources/components/title.dart';
+import 'package:test_app/resources/values/colors.dart';
 
-import 'values/colors.dart';
-import 'values/constant_text.dart';
 
 class FeedbackForm extends StatelessWidget {
   final String fullName;

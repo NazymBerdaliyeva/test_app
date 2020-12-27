@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:test_app/components/subtitle.dart';
+import 'package:test_app/resources/components/subtitle.dart';
 
 class RowData extends StatelessWidget {
   final String duration;
